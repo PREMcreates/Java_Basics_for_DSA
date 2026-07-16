@@ -1,8 +1,13 @@
+import java.util.Scanner;
 public class foreachloop {
     public static void main(String[] args) {
-        int [] arr = {10, 20, 30, 40, 50};
-        for(int element: arr){
-            System.out.println(element);
-        }
+        // max of three numbers
+        Scanner sc = new Scanner(System.in);
+        int a = sc.nextInt();
+        int b = sc.nextInt();
+        int c = sc.nextInt();
+
+        int ans = Math.max(c , Math.max(a,b));
+        System.out.println(ans);
     }
 }
